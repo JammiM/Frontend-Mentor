@@ -4,6 +4,13 @@
   --Slate-500: hsl(216, 15%, 48%);
   --Slate-900: hsl(218, 44%, 22%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--Slate-300);
   display: flex;
@@ -34,7 +41,9 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
-  color: var(--Slate-500);
+  color: var(--Slate-900);
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
 
 .secondary-heading {
