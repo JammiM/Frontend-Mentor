@@ -12,3 +12,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: var(--Yellow);
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.blog-card {
+  background-color: var(--White);
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  filter: drop-shadow(11px 11px 0px #000000);
+}
