@@ -62,3 +62,12 @@ body {
   color: var(--Slate-500);
   margin-bottom: 30px;
 }
+
+.attribution {
+  margin-top: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
