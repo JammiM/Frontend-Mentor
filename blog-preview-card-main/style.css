@@ -21,7 +21,7 @@ body {
   align-items: center;
   background-color: var(--Yellow);
   overflow: hidden; /* Hide scrollbars */
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Figtree", sans-serif;
 }
 
@@ -39,8 +39,6 @@ body {
 
 .blog-card-thumbnail {
   border-radius: 10px;
-  height: 200px;
-  border: 1px solid black;
 }
 .description {
   color: var(--Gray-500);
@@ -67,7 +65,7 @@ body {
 }
 
 .description {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .author {
@@ -81,4 +79,20 @@ body {
 
 .blog-author-thumbnail {
   height: 30px;
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+  .blog-card {
+    width: 385px;
+  }
 }
