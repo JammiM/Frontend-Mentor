@@ -21,12 +21,73 @@
 
 body {
   font-size: 1rem;
+  background-color: var(--Rose-50);
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-component {
+  background-color: var(--White);
+  /* margin: 30%; */
+  /* padding: 40px; */
+  width: 400px;
+  /* gap: 80px; */
+}
+
+.recipe-content,
+.recipe-header,
+.recipe-footer {
+  padding: 30px;
+}
+
+.recipe-main-title {
+  font-family: "Young Serif", serif;
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  font-size: 2rem;
+}
+.recipe-thumbnail {
+  width: 100%;
+}
+
+.prep-items,
+.ingredient-items,
+.instructions-items {
+  padding: 20px;
+}
+
+.prep-items {
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone-600);
 }
 
 .young-serif-regular {
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.main-description {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--Stone-600);
+}
+
+.prep-title {
+  font-family: "Outfit", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  /* font-size: 1rem; */
+  color: var(--Rose-800);
+}
+
+ul.prep-items > li {
+  /* color: red; */
+  margin: 10px;
 }
 
 .attribution {
