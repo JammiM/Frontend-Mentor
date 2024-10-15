@@ -26,18 +26,26 @@ body {
   justify-content: center;
 }
 
+hr {
+  /* color: var(--Stone-600); */
+  border-bottom: 1px solid var(--Stone-100);
+  /* border-color: var(--Stone-600); */
+}
+
 .recipe-component {
   background-color: var(--White);
   /* margin: 30%; */
   /* padding: 40px; */
-  width: 400px;
+  width: 380px;
   /* gap: 80px; */
+
+  border: 1px solid red;
 }
 
 .recipe-content,
 .recipe-header,
 .recipe-footer {
-  padding: 30px;
+  padding: 35px;
 }
 
 .recipe-main-title {
@@ -56,6 +64,17 @@ body {
   padding: 20px;
 }
 
+/* .instructions-items li::marker {
+  margin: 20px;
+} */
+
+.sub-heading {
+  font-size: 1.8rem;
+}
+.prep-content {
+  background-color: var(--Rose-50);
+  padding: 40px;
+}
 .prep-items {
   font-family: "Outfit", sans-serif;
   color: var(--Stone-600);
@@ -67,6 +86,12 @@ body {
   font-style: normal;
 }
 
+.outfit-font {
+  font-family: "Young Serif", serif;
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  /* color: var(--Brown-800); */
+}
 .main-description {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -74,6 +99,10 @@ body {
   font-style: normal;
   font-size: 1rem;
   color: var(--Stone-600);
+}
+
+.brown-color {
+  color: var(--Brown-800);
 }
 
 .prep-title {
@@ -85,9 +114,51 @@ body {
   color: var(--Rose-800);
 }
 
-ul.prep-items > li {
+ul.prep-items > li,
+ul.ingredient-items > li,
+ol.instructions-items > li {
   /* color: red; */
   margin: 10px;
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone-600);
+}
+
+ol.instructions-items li::marker,
+ul.ingredient-items > li::marker {
+  color: var(--Brown-800);
+  margin: 80px;
+}
+
+.recipe-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nutrition-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding-left: 200px; */
+  /* justify-items; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  border-bottom: 1px solid var(--Stone-100);
+  padding: 10px;
+  align-content: start;
+  /* align-items: flex-start; */
+}
+
+/* .nutrition-item :nth-child(1) {
+  padding-left: 30px;
+} */
+
+.nutrition-item div {
+  /* align-self: self-start; */
+  /* color: aqua; */
+  width: 100px;
+  margin-right: auto;
 }
 
 .attribution {
