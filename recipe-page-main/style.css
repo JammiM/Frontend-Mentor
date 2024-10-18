@@ -173,9 +173,13 @@ ul.ingredient-items > li::marker {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 720px) {
   .recipe-thumbnail-mobile {
     display: none;
+  }
+
+  .recipe-thumbnail-desktop {
+    display: block;
   }
 
   body {
