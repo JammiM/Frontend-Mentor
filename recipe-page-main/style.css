@@ -11,6 +11,7 @@
   --Brown-800: hsl(14, 45%, 36%);
   --Rose-800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
+  --background: hsl(29, 53%, 90%);
 }
 
 * {
@@ -21,7 +22,7 @@
 
 body {
   font-size: 1rem;
-  background-color: var(--Rose-50);
+
   display: flex;
   justify-content: center;
 }
@@ -34,7 +35,6 @@ hr {
 
 .recipe-component {
   background-color: var(--White);
-  width: 380px;
 }
 
 .recipe-content,
@@ -51,7 +51,8 @@ hr {
   font-size: 2.25rem;
   margin-top: 30px;
 }
-.recipe-thumbnail {
+.recipe-thumbnail-mobile,
+.recipe-thumbnail-desktop {
   width: 100%;
 }
 
@@ -164,4 +165,31 @@ ul.ingredient-items > li::marker {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1440px) {
+  .recipe-thumbnail-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .recipe-thumbnail-mobile {
+    display: none;
+  }
+
+  body {
+    background-color: var(--background);
+  }
+  .recipe-component {
+    margin-top: 120px;
+    width: 720px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+  }
+  .recipe-thumbnail {
+    border-radius: 10px;
+  }
 }
