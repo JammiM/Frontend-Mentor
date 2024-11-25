@@ -96,4 +96,13 @@ p {
 
 body {
   font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  background-color: var(--clr-Cream-secondary);
+  font-size: 0.875rem;
+  color: var(--clr-Very-dark-blue-neutral);
+
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 1rem;
 }
