@@ -7,8 +7,9 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Product preview card component</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,20 +23,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      defer="defer"
-      src="product_preview_card_component.bundle.js"
-    ></script>
   </head>
   <body>
     <main>
       <article class="product">
-        <picture class="product__img"
-          ><source
-            srcset="./images/image-product-desktop.jpg"
+        <picture class="product__img">
+          <source
+            srcset="../images/image-product-desktop.jpg"
             media="(min-width: 600px)" />
           <img
-            src="./images/image-product-mobile.jpg"
+            src="../images/image-product-mobile.jpg"
             alt="Gabrielle Essence Eau De Parfum"
             srcset=""
         /></picture>
@@ -68,5 +65,18 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/JammiM">James Morrissey</a>.
     </footer>
+    <script>
+      axe
+        .run()
+        .then((results) => {
+          if (results.violations.length) {
+            console.log(results.violations);
+            throw new Error("Accessibility issues found");
+          }
+        })
+        .catch((err) => {
+          console.error("Something bad happened:", err.message);
+        });
+    </script>
   </body>
 </html>
