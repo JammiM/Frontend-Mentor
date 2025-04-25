@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Product preview card component</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,12 +22,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      defer="defer"
+      src="product_preview_card_component.bundle.js"
+    ></script>
   </head>
   <body>
     <main>
       <article class="product">
-        <picture class="product__img">
-          <source
+        <picture class="product__img"
+          ><source
             srcset="./images/image-product-desktop.jpg"
             media="(min-width: 600px)" />
           <img
@@ -38,14 +41,11 @@
         /></picture>
         <div class="product__content">
           <p class="product__category">Perfume</p>
-
           <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
-
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-
           <div class="flex_group">
             <p class="product__price">
               <span class="visually-hidden">Current price</span>$149.99
@@ -54,14 +54,12 @@
               <span class="visually-hidden">Original price</span><s>$169.99</s>
             </p>
           </div>
-
           <button class="button" type="button" data-icon="shopping-cart">
             Add to cart
           </button>
         </div>
       </article>
     </main>
-
     <footer class="attribution">
       Challenge by
       <a
@@ -70,19 +68,5 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/JammiM">James Morrissey</a>.
     </footer>
-
-    <script>
-      axe
-        .run()
-        .then((results) => {
-          if (results.violations.length) {
-            console.log(results.violations);
-            throw new Error("Accessibility issues found");
-          }
-        })
-        .catch((err) => {
-          console.error("Something bad happened:", err.message);
-        });
-    </script>
   </body>
 </html>
