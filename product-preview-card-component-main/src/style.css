@@ -27,7 +27,7 @@
 
 body {
   /* 3. Add accessible line-height */
-  line-height: 1.5;
+  line-height: 1.7;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
@@ -74,6 +74,12 @@ h6 {
   text-wrap: balance;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
 /*
   9. Create a root stacking context
 */
@@ -105,4 +111,44 @@ body {
   min-height: 100vh;
   place-content: center;
   margin: 1rem;
+}
+
+.flex_group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product {
+  --content-padding: 3rem;
+  --content-spacing: 0.5rem;
+
+  background-color: var(--clr-White-neutral);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.product__content {
+  display: grid;
+  gap: var(--content-spacing);
+  padding: var(--content-padding);
+}
+
+.product__category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.825rem;
+}
+
+.product__title {
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--clr-Very-dark-blue-neutral);
+}
+
+.product__price {
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--clr-Dark-cyan-primary);
 }
