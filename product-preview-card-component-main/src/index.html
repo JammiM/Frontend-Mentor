@@ -17,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.3/axe.min.js"
+      integrity="sha512-Y6Vva0IT8gxKyqgZjlEfG76U48eXakSZ8UqY6vMQMe6xES2So8WuItGYcHi3tH1OAlMKjTWjSeN/5x2aysOXIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <main>
@@ -64,5 +70,19 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/JammiM">James Morrissey</a>.
     </footer>
+
+    <script>
+      axe
+        .run()
+        .then((results) => {
+          if (results.violations.length) {
+            console.log(results.violations);
+            throw new Error("Accessibility issues found");
+          }
+        })
+        .catch((err) => {
+          console.error("Something bad happened:", err.message);
+        });
+    </script>
   </body>
 </html>
