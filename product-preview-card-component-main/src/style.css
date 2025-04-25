@@ -1,5 +1,6 @@
 :root {
   --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-primary-500: hsl(156, 42%, 18%);
   --clr-secondary-200: hsl(30, 38%, 92%);
 
   --clr-neutral-900: hsl(212, 21%, 14%);
@@ -129,6 +130,36 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-radius: 0.5em;
+  border: 0;
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  padding: 0.5em 1.5em;
+
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.button:is(:hover, :focus) {
+  background-color: var(--clr-primary-500);
+}
+
+.button[data-icon="shopping-cart"]::before {
+  content: "";
+  width: 15px;
+  height: 16px;
+  background-image: url("../images/icon-cart.svg");
 }
 
 .product {
