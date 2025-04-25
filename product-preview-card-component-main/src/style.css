@@ -163,12 +163,20 @@ body {
 }
 
 .product {
-  --content-padding: 3rem;
-  --content-spacing: 0.5rem;
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
 
   background-color: var(--clr-neutral-100);
   border-radius: 0.5rem;
   overflow: hidden;
+  display: grid;
+  max-width: 600px;
+}
+
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .product__content {

@@ -21,13 +21,15 @@
   <body>
     <main>
       <article class="product">
-        <picture class="product_img"
-          ><img
+        <picture class="product__img">
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 600px)" />
+          <img
             src="./images/image-product-mobile.jpg"
             alt="Gabrielle Essence Eau De Parfum"
             srcset=""
         /></picture>
-
         <div class="product__content">
           <p class="product__category">Perfume</p>
 
@@ -54,11 +56,13 @@
       </article>
     </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="https://github.com/JammiM">James Morrissey</a>.
+    </footer>
   </body>
 </html>
